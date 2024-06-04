@@ -1,0 +1,27 @@
+@if (isLoading) {
+    <mat-card-content class="card_img">
+      <img mat-card-sm-image class="img2" />
+    </mat-card-content>
+  }@else {
+
+    <!-- @for (item of data.datasets; track $index) {
+      <p>{{item.data}}</p>
+    } -->
+
+    <mat-card>
+      <mat-card-title>
+        Temperature
+      </mat-card-title>
+        
+        <canvas baseChart [data]="data"  [type]="'bar'"> </canvas>
+    </mat-card>
+    <mat-card>
+      <mat-card-title>
+        Probability Presipitations
+      </mat-card-title>
+      <canvas baseChart [data]="data2"  [type]="'line'"> </canvas>
+    </mat-card>
+
+
+  }
+

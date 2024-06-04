@@ -1,0 +1,11 @@
+<app-title title="Defer Views /Blocs"/>
+<section class="grid grid-cols-1">
+
+    @defer(){
+        <app-heavy-loaders-slow/>
+
+    }@placeholder {
+        <p class ="h-[600px] w -full"></p>
+    }
+
+</section>
